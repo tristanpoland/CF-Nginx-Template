@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nginx Buildpack Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nginx Buildpack Test</h1>
+            <p class="subtitle">Running on Cloud Foundry</p>
+        </header>
+        
+        <main>
+            <section class="info-card">
+                <h2>Application Information</h2>
+                <p>This is a test application for the Nginx buildpack on Cloud Foundry.</p>
+                <p>The current date and time is: <span id="datetime"></span></p>
+            </section>
+            
+            <section class="info-card">
+                <h2>Buildpack Features</h2>
+                <ul>
+                    <li>Static file serving</li>
+                    <li>Custom Nginx configuration</li>
+                    <li>Gzip compression</li>
+                    <li>Custom error pages</li>
+                    <li>URL rewriting</li>
+                </ul>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Nginx Cloud Foundry Test App</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.getElementById('datetime').textContent = new Date().toString();
+    </script>
+</body>
+</html>

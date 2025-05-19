@@ -1,0 +1,11 @@
+# manifest.yml
+---
+applications:
+- name: nginx-cf-test
+  memory: 64M
+  instances: 1
+  buildpacks:
+  - nginx_buildpack
+  path: .
+  routes:
+  - route: nginx-cf-test.${CF_DOMAIN}
